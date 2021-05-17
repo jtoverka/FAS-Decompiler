@@ -58,6 +58,7 @@
       <DependentUpon>Decompiler.xaml</DependentUpon>
     </Compile>
     <Compile Include="FAS.cs" />
+    <Compile Include="FasCommando.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
