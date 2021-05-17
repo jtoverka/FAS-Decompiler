@@ -8,7 +8,7 @@ namespace FAS_Decompiler
 {
     public static class FAS
     {
-        public static void Decompile(byte[] program, byte instruction)
+        public static void Decompile(StringBuilder builder, byte[] program, byte instruction)
         {
             switch (instruction)
             {

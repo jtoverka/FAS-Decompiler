@@ -49,7 +49,7 @@
                     CornerRadius="1"
                     Margin="0,1,0,1">
                 <TextBlock Margin="5"
-                           Text="test"
+                           Text="File://"
                            VerticalAlignment="Center" />
             </Border>
             <Border BorderBrush="#505050"
@@ -58,7 +58,7 @@
                     CornerRadius="1"
                     Margin="0,1,0,1">
                 <TextBlock Margin="5"
-                           Text="test"
+                           Text="Operation"
                            VerticalAlignment="Center" />
             </Border>
         </Grid>
