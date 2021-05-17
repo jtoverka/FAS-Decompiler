@@ -14,16 +14,14 @@
             <RowDefinition />
             <RowDefinition Height="30" />
         </Grid.RowDefinitions>
-        <Menu VerticalAlignment="Top">
+        <Menu VerticalAlignment="Top"
+              HorizontalAlignment="Left">
             <MenuItem Header="File">
                 <MenuItem Header="Open" />
             </MenuItem>
             <MenuItem Header="Edit">
                 <MenuItem Header="Search" />
             </MenuItem>
-            <MenuItem Header="Save ListColumnsWidth" />
-            <MenuItem Header="About"
-                      Click="About_MenuItem_Click" />
         </Menu>
         <ListView Grid.Row="1">
             <ListView.View>
