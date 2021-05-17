@@ -1,0 +1,68 @@
+﻿<Window x:Class="FAS_Decompiler.Decompiler"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FAS_Decompiler"
+        mc:Ignorable="d"
+        Title="Fas-Disassembler for Visuallisp V 0.5"
+        Height="450"
+        Width="800">
+    <Grid Background="#f0f0f0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" />
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Search" />
+            </MenuItem>
+            <MenuItem Header="Save ListColumnsWidth" />
+            <MenuItem Header="About"
+                      Click="About_MenuItem_Click" />
+        </Menu>
+        <ListView Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Position"
+                                    Width="90"></GridViewColumn>
+                    <GridViewColumn Header="Command"
+                                    Width="90"></GridViewColumn>
+                    <GridViewColumn Header="Parameter"
+                                    Width="90"></GridViewColumn>
+                    <GridViewColumn Header="Disassembler"
+                                    Width="290"></GridViewColumn>
+                    <GridViewColumn Header="ESP"
+                                    Width="50"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Border BorderBrush="#505050"
+                    BorderThickness="1"
+                    CornerRadius="1"
+                    Margin="0,1,0,1">
+                <TextBlock Margin="5"
+                           Text="test"
+                           VerticalAlignment="Center" />
+            </Border>
+            <Border BorderBrush="#505050"
+                    BorderThickness="1"
+                    Grid.Column="1"
+                    CornerRadius="1"
+                    Margin="0,1,0,1">
+                <TextBlock Margin="5"
+                           Text="test"
+                           VerticalAlignment="Center" />
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
